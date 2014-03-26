@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculator Index</title>
+    <link href="Content/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/custom.css" rel="stylesheet" />
+    <script src="Scripts/vendor/respond.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+                <!-- role is for screen readers-->
+
+                <div class="navbar-header">
+                    <!-- Menu button (i.e. burger / pancake button)-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <!-- data- is HTML5 calling JS funtions.-->
+                        <span class="sr-only">Toogle naviagtion</span>
+                        <!-- 3 horizontal bars inside button-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!--Horitonzal bar along the top that will collapse when the screen gets small-->
+                <div class="collapse navbar-collapse" id="collapse">
+                    <!--navbar-header adds functionality like buttons to show the menu when the screen size is small-->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Attempt at something cool a responsive menu</a></li>
+                        <li><a href="#"></a>
+                        <li><a href="#"></a>
+                    </ul>
+                </div>
+            </nav>
+            <form name="form1" class="form-inline" role="form">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <label class="sr-only" for="first_no">First Number </label>
+                        First Number <input type="number" class="form-control" name="first_no" placeholder="Enter First Number">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+                            <label class="sr-only" for="sec_no">Second Number</label>
+                            Second Number<input type="number" class="form-control" name="sec_no" placeholder="Enter Second Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <p>
+                            <label class="sr-only" for="sec_no">Calculate Button</label>
+                            <input type="button" id="buttonCalc" name="calculating" value="Calculate" class="btn btn-primary btn-lg" onclick="Calc();">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+
+                            Addition Total<input type="text" name="add" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+                            Sutraction<input type="text" name="sub" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+                            Multiplication<input type="text" name="multi" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+                            Division<input type="text" name="divi" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="Scripts/vendor/boostrap/bootstrap.min.js"></script>
+    <script src="Scripts/calculator.js"></script>
+</body>
+
+</html>

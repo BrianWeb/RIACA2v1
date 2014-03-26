@@ -1,0 +1,11 @@
+﻿/* CUSTOM CSS FILE*/
+
+body { 
+    padding-top: 60px;
+}
+
+
+
+.navbar navbar-default navbar-fixed-top navbar-inverse{
+    margin-bottom:32%;
+}
