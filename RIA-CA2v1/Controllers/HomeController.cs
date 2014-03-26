@@ -12,7 +12,7 @@ namespace RIA_CA2v1.Controllers
         // GET: /Home/
         public string Index()
         {
-            return "Hello World bbbb";
+            return "Hello World i hope u can see this. i've just saved it to local git repo";
         }
 	}
 }
