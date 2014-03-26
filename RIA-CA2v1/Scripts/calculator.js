@@ -39,9 +39,9 @@ for (var i = 0; i < keys.length; i++) {
             // Basic functionality of the calculator is complete. But there are some problems like 
             // 1. No two operators should be added consecutively.
             // 2. The equation shouldn't start from an operator except minus
-            // 3. not more than 1 decimal should be there in a number
+            // 3. No more than 1 decimal should be there in a number
 
-            // We'll fix these issues using some simple checks
+            // These issues are addressed below:
 
             // indexOf works only in IE9+
         else if (operators.indexOf(btnVal) > -1) {
@@ -66,7 +66,7 @@ for (var i = 0; i < keys.length; i++) {
             decimalAdded = false;
         }
 
-            // Now only the decimal problem is left. We can solve it easily using a flag 'decimalAdded' which we'll set once the decimal is added and prevent more decimals to be added once it's set. It will be reset when an operator, eval or clear key is pressed.
+            // Now only the decimal problem is left. It is solved using a flag 'decimalAdded' which we'll set once the decimal is added and prevent more decimals to be added once it's set. It will be reset when an operator, eval or clear key is pressed.
         else if (btnVal == '.') {
             if (!decimalAdded) {
                 input.innerHTML += btnVal;
